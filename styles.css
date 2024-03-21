@@ -1,0 +1,179 @@
+:root {
+    --primary-color: rgb(77,93,87);
+    --secondary-color: rgb(238,207,73);
+    --gray1-color: rgb(51,51,51);
+    --gray2-color: rgb(102,102,102);
+    --gray3-color: rgb(153,153,153);
+    --gray4-color: rgb(204,204,204);
+    --background-section-color: rgb(241,229,216);
+    --background-body-color: rgb(237,239,238);
+}
+
+*,*::before,*::after { 
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-body-color);
+    font-family: serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 1%;
+}
+
+/* ----------- Flex ----------- */
+.flex-container-row {
+    display: flex;
+    flex-flow: wrap;
+    justify-content:center;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+/* ----------- Header ----------- */
+header > img {
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------- Nav ----------- */
+nav {
+    border-radius: 25px;
+    margin: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    max-width: calc(1200px + 40px);
+    border-radius: 25px;
+    background-color: var(--gray1-color);
+}
+
+nav li {
+    flex:1;
+    display: inline-block;
+    max-width: 5em;
+    margin: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--secondary-color);
+}
+
+/* ----------- Main ----------- */
+main {
+    flex-grow: 1;
+}
+
+.section-1 {
+    max-width: calc(1200px + 40px);
+    border-radius: 25px;
+    margin: 15px;
+    padding: 1em;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    background-image: url(assets/images/home-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-2 {
+    max-width: 400px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 1.5em;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 2em;
+    text-align: left;
+    text-shadow: 2px 2px 4px white;
+    background: var(--background-section-color);
+}
+
+/* ----------- Footer ----------- */
+footer div {
+    max-width: calc(600px + 20px);
+}
+
+#footer-logo img {
+    height: auto;
+    width: 50px;
+    display: block;
+    margin-right: auto;
+}
+
+#footer-copyright {
+   text-align: right;
+}
+
+/* ----------- Etc ----------- */
+/* ------ Header Fonts ------*/
+h1 {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+p, a {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* ------ List Style ------*/
+li {
+    list-style: none;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ------ Divider ------ */
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+  }
+
+/* ----- Images ----- */
+.image-container {
+    width: auto;
+    height: auto;
+    border: var(--dev-outline-line) solid var(--dev-outline-1);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: var(--dev-outline-line) solid var(--dev-outline-2);
+}

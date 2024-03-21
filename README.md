@@ -1,1 +1,2 @@
-# c-portifolio-little-lemon
+#### Sample Output:
+![](samples/little-lemon-sample-page.png)
